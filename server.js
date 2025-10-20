@@ -34,7 +34,7 @@ app.post("/contacto", async (req, res) => {
       from: `"Formulario de contacto" <${email}>`,
       to: "msalgar99@gmail.com",
       subject: `Nuevo mensaje de ${nombre}`,
-      text: mensaje + `\nNúmero de contacto: ${numero}`,
+      text: mensaje + `\nNúmero de contacto: ${numero} \nDatos \n Nombre: ${nombre} \n Email: ${email} \n Número: ${numero}`,
     });
 
     res.json({ ok: true, mensaje: "Mensaje enviado correctamente" });

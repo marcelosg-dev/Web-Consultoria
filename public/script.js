@@ -16,7 +16,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     const data = await res.json();
 
     if (data.ok) {
-      console.log("✅ Mensaje enviado correctamente");
+      alert("✅ Mensaje enviado correctamente");
       e.target.reset();
     } else {
       console.error("❌ Error al enviar el mensaje:", data.error || "Desconocido");

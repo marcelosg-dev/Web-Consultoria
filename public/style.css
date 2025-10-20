@@ -124,7 +124,11 @@
     justify-content: center;
     width: 100%;
     text-align: center;
+}
 
+.servicios-container p{
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 .servicios-content-container{
@@ -160,6 +164,7 @@
     background-size: contain;
     color: white;
     font-weight: bolder;
+    
 }
 
 .contact-title h2{
