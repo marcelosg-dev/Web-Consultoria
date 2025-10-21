@@ -32,6 +32,11 @@
     padding: 10px;
 }
 
+/* add top spacing so fixed header doesn't cover content */
+main{
+    margin-top: 10vh; /* matches header height */
+}
+
 .img-container{
     width: 100vw;
     height: 100vh;
@@ -157,6 +162,109 @@
     display: flex;
     flex-direction: row;
     
+}
+
+/* MOBILE RESPONSIVE RULES */
+@media (max-width: 600px) {
+    .header-container{
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .img-container{
+        height: 60vh;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 8vh; /* avoid overlap with taller header */
+    }
+
+    .img-container a{
+        font-size: 1.3rem;
+        padding: 8px 12px;
+    }
+
+    .nosotros-container{
+        height: auto;
+        padding: 30px 12px;
+    }
+
+    .nosotros-text{
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .nosotros-images-container{
+        gap: 6%;
+        flex-wrap: wrap;
+        padding: 12px 6px;
+    }
+
+    .nosotros-images-content{
+        width: 45%;
+        margin-bottom: 14px;
+    }
+
+    .nosotros-images-container img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .servicios-section{
+        padding: 16px 8px;
+    }
+
+    .servicios-container{
+        gap: 18px;
+    }
+
+    .servicios-content-container{
+        width: 90%;
+    }
+
+    .img-servicios{
+        width: 140px;
+        height: 140px;
+    }
+
+    .contact-container{
+        flex-direction: row;
+    }
+
+    .contact-title, .contact-form{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-title{
+        padding: 24px 12px;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .contact-form{
+        padding: 20px 12px;
+    }
+
+    .contact-form input, .contact-form textarea{
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-form p{
+        width: 40%;
+        font-size: 0.9rem;
+        background-size: auto;
+    }
+
+    .footer-container{
+        height: auto;
+        padding: 20px 12px;
+    }
 }
 
 .contact-title{
