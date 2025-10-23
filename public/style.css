@@ -33,9 +33,7 @@
 }
 
 /* add top spacing so fixed header doesn't cover content */
-main{
-    margin-top: 10vh; /* matches header height */
-}
+
 
 .img-container{
     width: 100vw;
@@ -65,47 +63,153 @@ main{
     text-decoration: underline;
     
 }
+
 .nosotros-container{
-    
     width: 100%;
     height: auto;
-    color: black;
+}
+
+.nosotros-header{
+    background: url(images/regio.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    
+    box-sizing: border-box;
+}
+
+.nosotros-header h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    /* background: #000000a1; */
+    padding: 10px;
+}
+
+.nosotros-header p{
+    font-size: 1.5rem;
+    color: white;
+    /* background: #000000a1; */
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .nosotros-text{
     width: 50%;
-    background-color: skyblue;
-    padding: 20px;
-    font-size: 20px;
-    text-align: justify;
+    height: auto;
 }
 
-.nosotros-images-container{
+.tecnologia-container{
     width: 100%;
+    height: auto;
+    background: skyblue;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tecnologia-text-container{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.tecnologia-text-container h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.tecnologia-text-container p{
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.5;
+
+}
+
+.nosotros-img{
+    width: 50%;
+    height:100%;
+}
+
+.nosotros-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.transparencia-container{
+    width: 100%;
+    height: auto;
+    background: rgb(25, 55, 75);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 20%;
+    justify-content: space-between;
 }
 
-.nosotros-images-container img{
-    width: 100px;
-    height: 100px;
-    border-style: solid;
-    border-radius: 50%;
-    
-}
-
-.nosotros-images-content{
+.transparencia-text-container{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.transparencia-text-container h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.transparencia-text-container p{
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+}
+
+.colaboracion-container{
+    width: 100%;
+    height: auto;
+    background: skyblue;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.colaboracion-text-container{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.colaboracion-text-container h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.colaboracion-text-container p{
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.5;
 }
 
 .servicios-section{
